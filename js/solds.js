@@ -4,7 +4,7 @@ let houses = [];
 
 
 const getHouses = async() => {
-    let url = "http://localhost/rent/public/houses";
+    let url = "https://rentapporhan.herokuapp.com/public/houses";
 
     let response = await fetch(url);
     let data = await response.json();

@@ -3,7 +3,7 @@ let houses= []
 let rents= []
 
 const getSoldHouses = async() => {
-    let url = "http://localhost/rent/public/houses";
+    let url = "https://rentapporhan.herokuapp.com/public/houses";
 
     let response = await fetch(url);
     let data = await response.json();
@@ -18,7 +18,7 @@ const getSoldHouses = async() => {
 }
 
 const getRentedHouses = async() => {
-    let url = "http://localhost/rent/public/rents";
+    let url = "https://rentapporhan.herokuapp.com/public/rents";
 
     let response = await fetch(url);
     let data = await response.json();
@@ -33,7 +33,7 @@ const getRentedHouses = async() => {
 }
 
 const getHouses = async() => {
-    let url = "http://localhost/rent/public/houses";
+    let url = "https://rentapporhan.herokuapp.com/public/houses";
 
     let response = await fetch(url);
     let data = await response.json();
@@ -44,7 +44,7 @@ const getHouses = async() => {
         houses.push(element);
     });
 
-    let url2 = "http://localhost/rent/public/rents";
+    let url2 = "https://rentapporhan.herokuapp.com/public/rents";
 
     let response2 = await fetch(url2);
     let data2 = await response2.json();

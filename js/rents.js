@@ -4,7 +4,7 @@ let houses = [];
 
 
 const getHouses = async() => {
-    let url = "http://localhost/rent/public/rents";
+    let url = "https://rentapporhan.herokuapp.com/public/rents";
 
     let response = await fetch(url);
     let data = await response.json();
@@ -62,7 +62,7 @@ const createHouseCard = (house) => {
 }
 
 let rentHouse = (id) => {
-    let url = `http://localhost/rent/public/rents/${id}`;
+    let url = `https://rentapporhan.herokuapp.com/public/rents/${id}`;
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);

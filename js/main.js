@@ -4,7 +4,7 @@ let houses = [];
 
 
 const getHouses = async() => {
-    let url = "http://localhost/rent/public/houses";
+    let url = "https://rentapporhan.herokuapp.com/public/houses";
 
     let response = await fetch(url);
     let data = await response.json();
@@ -15,7 +15,7 @@ const getHouses = async() => {
             houses.push(element);
     });
 
-    let url2 = "http://localhost/rent/public/rents";
+    let url2 = "https://rentapporhan.herokuapp.com/public/rents";
 
     let response2 = await fetch(url2);
     let data2 = await response2.json();
@@ -85,7 +85,7 @@ const createHouseCard = (house) => {
 
 let sellHouse = (id) => {
 
-    let url = `http://localhost/rent/public/houses/${id}`;
+    let url = `https://rentapporhan.herokuapp.com/public/houses/${id}`;
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);
@@ -103,7 +103,7 @@ let sellHouse = (id) => {
 let rentHouse = (id) => {
     console.log("renting", id);
     
-    let url = `http://localhost/rent/public/rents/${id}`;
+    let url = `https://rentapporhan.herokuapp.com/public/rents/${id}`;
 
     var xhr = new XMLHttpRequest();
     xhr.open("PUT", url);
