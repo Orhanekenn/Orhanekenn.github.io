@@ -25,7 +25,7 @@ let addHouse = async () => {
 
 
     
-    let url = tmptype == "rent" ? "http://localhost/rent/public/rents" : "http://localhost/rent/public/houses";
+    let url = tmptype == "rent" ? "https://rentapporhan.herokuapp.com/public/rents" : "https://rentapporhan.herokuapp.com/public/houses";
     console.log(url);
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url, true);
