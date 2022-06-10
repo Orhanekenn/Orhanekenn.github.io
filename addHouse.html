@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Ev Ekle</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Evler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="addHouse.html">Ev Ekle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="solds.html">Satılanlar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="rents.html">Kiralananlar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="general.html">Genel Durum</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">ID</label>
+        <input type="text" class="form-control" id="inpId">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Ev Başlığı</label>
+        <input type="text" class="form-control" id="inpName" >
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Lokasyon</label>
+        <input type="text" class="form-control" id="inpLocation" >
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Ev Açıklaması</label>
+        <input type="text" class="form-control" id="inpDescription" >
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Fiyat</label>
+        <input type="text" class="form-control" id="inpPrice" >
+      </div>
+
+      <div id="rates">
+        <input type="radio" id="r1" name="rate" value="sale"> Satılık
+        <input type="radio" id="r2" name="rate" value="rent"> Kiralık
+      </div>
+
+      <button type="button" onclick="addHouse()" class="btn btn-primary">Submit</button>
+  </div>
+  <script src="./js/addHouse.js"></script>
+
+</body>
+</html>
