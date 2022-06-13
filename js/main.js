@@ -62,7 +62,7 @@ const createHouseCard = (house) => {
         else
             await rentHouse(cardId.innerText);
         
-        window.location.reload();
+        //window.location.reload();
 
     }
 
